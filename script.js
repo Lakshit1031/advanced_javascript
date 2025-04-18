@@ -84,11 +84,82 @@
 
 
 //RETURNING FUNCTION VALUES
-function addTwoNumbers(x,y){
-    return x+y; }
-let resultArr=[];
-for(let i=0; i<10; i++){
-    let result=addTwoNumbers(i,2*i);
-    resultArr.push(result);}
+// function addTwoNumbers(x,y){
+//     return x+y; }
+// let resultArr=[];
+// for(let i=0; i<10; i++){
+//     let result=addTwoNumbers(i,2*i);
+//     resultArr.push(result);}
         
-console.log(resultArr);
+// console.log(resultArr);
+
+//RETURNING WITH ARROW FUNCTION
+// const addTwoNumbers = (x, y) => x + y;
+// let resultArr = [];
+// for (let i = 0; i < 10; i++) {
+//     let result = addTwoNumbers(i, 2 * i);
+//     resultArr.push(result);
+// }
+
+// console.log(resultArr);
+
+
+//VARIABLE SCOPE IN FUNCTION
+// function scopeExample() {
+//     let localVariable = "I am local to this function";
+//     console.log(localVariable); 
+// }
+
+// scopeExample();
+
+// let globalVariable = "I am global";
+
+// function accessGlobalVariable() {
+//     console.log(globalVariable); 
+// }
+
+// accessGlobalVariable();
+// console.log(globalVariable); 
+
+
+// function testAvailability() {
+//     let text = "Hello World!";
+//     console.log("Available here", text);
+// }
+
+// testAvailability();
+// console.log("Not Available here", text);
+
+
+// class vehicle {
+//     constructor(color, currentSpeed, maxSpeed) {
+//         this.color = color;
+//         this.currentSpeed = currentSpeed;
+//         this.maxSpeed = maxSpeed;
+//     }
+//     move() {
+//         console.log("The vehicle is moving at " + this.currentSpeed + " km/h");
+//     }
+//     accelerate(amount){
+//         this.currentSpeed += amount;
+//         console.log("The vehicle accelerated to " + this.currentSpeed + " km/h");
+//     }
+
+// class Motorcycle extends vehicle {
+//     constructor(color, currentSpeed, maxSpeed, type) {
+//         super(color, currentSpeed, maxSpeed, fuel);
+//         this.fuel = fuel;
+//     }
+//     doWheelie() {
+//         console.log("The motorcycle is doing a wheelie!");
+//     }
+// }
+// let motor = new Motorcycle("red", 50, 150, "petrol");
+// console.log(motor.color);
+
+PaymentResponse.prototype.introduce = function() {
+    console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+}   
+let p = new personalbar("John", 30);
+console.log(p.name);
+p.introduce();
