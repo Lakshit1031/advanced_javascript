@@ -22,7 +22,7 @@
 // console.log(a4); // undefined
 // console.log(a5); // undefined
 
-// const fruits = [ 'apple', 'banana', 'orange', 'mango' ];
+const fruits = [ 'apple', 'banana', 'orange', 'mango' ];
 // let [fruit1,,,fruit2] = fruits; 
 // console.log(fruit1); 
 // console.log(fruit2); 
@@ -45,4 +45,12 @@
 //     text+= key+ "is" +value;
 // }
 // console.log(text)
+
+//console.log(fruits.includes("Mangoes")); // false
+
+//TRAILING COMMAS
+
+const arr = ["one", "two", "three",, ];
+console.log(arr)
+console.log(arr.length)
 
